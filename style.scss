@@ -57,22 +57,20 @@ picture {
 }
 
 .container {
-    width: 320px;
-    height: 497px;
+    width: 350px;
     margin: auto;
-    padding-bottom: 20px;
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap: 30px;
+
+    border-radius: 15px;
+    background: var(--very-dark-blue-card-bg, #15263F);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
 
     .image {
         width: 288px;
-        height: 288px;
 
         border-radius: 10px;
         background: hsl(var(--clr-blue));
@@ -82,6 +80,11 @@ picture {
         }
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+  
     .title {
         width: 302px;
 
@@ -125,6 +128,14 @@ picture {
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+
+            display: flex;
+            gap: 7px;
+
+            img {
+                width: 11px;
+                height: 18px;
+            }
         }
 
         .timeleft {
@@ -137,14 +148,64 @@ picture {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            display: flex;
+            gap: 7px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
         }
 
-        .horisontalline {
-            width: 302px;
-            height: 1px;
-
-            background: var(--very-dark-blue-line, #2E405A);
-
-        }
     }
+    .horizontalline {
+        width: 302px;
+        height: 1px;
+
+        background: var(--very-dark-blue-line, #2E405A);
+
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+
+            width: 33px;
+            height: 33px;
+            
+            border-radius: 33px;
+            border: 1px solid var(--White, #FFF);
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+
+        p {
+            color: var(--White, #FFF);
+            font-feature-settings: 'clig' off, 'liga' off;
+
+            /* Caption */
+            font-family: Outfit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            span {
+                color: var(--Soft-Blue, #8BACD9);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Caption */
+                font-family: Outfit;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+    }
+}
 }
