@@ -1,9 +1,9 @@
 :root {
 
-    --clr-grey: 219, 15%, 55%;
-    --clr-blue: 216, 95%, 58%;
-    --clr-shade-blue: 216, 100%, 61%;
-    --clr-dark-navy: 217, 44%, 22%;
+    --clr-white: 0, 0%, 100%;
+    --clr-cyan: 178, 100%, 50%;
+    --clr-soft-blue: 215, 51%, 70%;
+    --very-dark-blue-line: 216, 32%, 27%;
 
     --font-family-outfit: 'Outfit', sans-serif;
 }
@@ -85,8 +85,7 @@ picture {
     .title {
         width: 302px;
 
-        color: var(--White, #FFF);
-        font-feature-settings: 'clig' off, 'liga' off;
+        color: hsl(var(--clr-white));
         
         /* Heading */
         font-family: Outfit;
@@ -99,8 +98,7 @@ picture {
     .description {
         width: 302px;
 
-        color: var(--Soft-Blue, #8BACD9);
-        font-feature-settings: 'clig' off, 'liga' off;
+        color: hsl(var(--clr-soft-blue));
 
         /* Body */
         font-family: Outfit;
@@ -116,8 +114,7 @@ picture {
         align-items: center;
 
         .value {
-            color: var(--Cyan, #00FFF8);
-            font-feature-settings: 'clig' off, 'liga' off;
+            color: hsl(var(--clr-cyan));
 
             /* Caption (Bold) */
             font-family: Outfit;
@@ -136,8 +133,8 @@ picture {
         }
 
         .timeleft {
-            color: var(--Soft-Blue, #8BACD9);
-            font-feature-settings: 'clig' off, 'liga' off;
+            color: hsl(var(--clr-soft-blue));
+
 
             /* Caption */
             font-family: Outfit;
@@ -160,7 +157,7 @@ picture {
         width: 302px;
         height: 1px;
 
-        background: var(--very-dark-blue-line, #2E405A);
+        background: hsl(var(--very-dark-blue-line));
 
     }
 
@@ -175,13 +172,12 @@ picture {
             height: 33px;
             
             border-radius: 33px;
-            border: 1px solid var(--White, #FFF);
-            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            border: 1px solid hsl(var(--clr-white));
         }
 
         p {
-            color: var(--White, #FFF);
-            font-feature-settings: 'clig' off, 'liga' off;
+            color: hsl(var(--clr-white));
+
 
             /* Caption */
             font-family: Outfit;
@@ -191,8 +187,8 @@ picture {
             line-height: normal;
 
             span {
-                color: var(--Soft-Blue, #8BACD9);
-                font-feature-settings: 'clig' off, 'liga' off;
+                color: hsl(var(--clr-soft-blue));
+    
 
                 /* Caption */
                 font-family: Outfit;
