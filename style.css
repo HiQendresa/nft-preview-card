@@ -65,12 +65,11 @@ picture {
   box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
 }
 .container .image {
-  width: 288px;
-  border-radius: 10px;
-  background: hsl(var(--clr-blue));
-}
-.container .image img {
-  border-radius: 10px;
+  height: 302px;
+  border-radius: 8px;
+  background: url("./images/image-equilibrium.jpg"), lightgray 50%/cover no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .container .content {
   display: flex;
