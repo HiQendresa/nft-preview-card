@@ -75,6 +75,21 @@ picture {
         background: url('./images/image-equilibrium.jpg'), lightgray 50% / cover no-repeat;
         background-position: center;
         background-size: cover;
+        position: relative;
+
+        &:hover {
+            &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: hsl(var(--clr-cyan));
+            border-radius: 8px;
+            opacity: 0.503;
+            }
+        }
     }
 
     .content {
@@ -86,13 +101,16 @@ picture {
         width: 302px;
 
         color: hsl(var(--clr-white));
-        
-        /* Heading */
+
         font-family: Outfit;
         font-size: 22px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+
+        &:hover {
+            color: hsl(var(--clr-cyan));
+        }
     }
 
     .description {
@@ -116,7 +134,6 @@ picture {
         .value {
             color: hsl(var(--clr-cyan));
 
-            /* Caption (Bold) */
             font-family: Outfit;
             font-size: 16px;
             font-style: normal;
@@ -135,8 +152,6 @@ picture {
         .timeleft {
             color: hsl(var(--clr-soft-blue));
 
-
-            /* Caption */
             font-family: Outfit;
             font-size: 16px;
             font-style: normal;
@@ -176,26 +191,25 @@ picture {
         }
 
         p {
-            color: hsl(var(--clr-white));
-
-
+            color: hsl(var(--clr-soft-blue));            
             /* Caption */
             font-family: Outfit;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-
+            
             span {
-                color: hsl(var(--clr-soft-blue));
-    
-
-                /* Caption */
+                color: hsl(var(--clr-white));
                 font-family: Outfit;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+
+                &:hover {
+                    color: hsl(var(--clr-cyan));   
+                }
             }
         }
 

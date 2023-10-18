@@ -70,6 +70,18 @@ picture {
   background: url("./images/image-equilibrium.jpg"), lightgray 50%/cover no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+.container .image:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(var(--clr-cyan));
+  border-radius: 8px;
+  opacity: 0.503;
 }
 .container .content {
   display: flex;
@@ -79,12 +91,14 @@ picture {
 .container .content .title {
   width: 302px;
   color: hsl(var(--clr-white));
-  /* Heading */
   font-family: Outfit;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.container .content .title:hover {
+  color: hsl(var(--clr-cyan));
 }
 .container .content .description {
   width: 302px;
@@ -103,7 +117,6 @@ picture {
 }
 .container .content .info .value {
   color: hsl(var(--clr-cyan));
-  /* Caption (Bold) */
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
@@ -118,7 +131,6 @@ picture {
 }
 .container .content .info .timeleft {
   color: hsl(var(--clr-soft-blue));
-  /* Caption */
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
@@ -148,7 +160,7 @@ picture {
   border: 1px solid hsl(var(--clr-white));
 }
 .container .content .author p {
-  color: hsl(var(--clr-white));
+  color: hsl(var(--clr-soft-blue));
   /* Caption */
   font-family: Outfit;
   font-size: 16px;
@@ -157,11 +169,13 @@ picture {
   line-height: normal;
 }
 .container .content .author p span {
-  color: hsl(var(--clr-soft-blue));
-  /* Caption */
+  color: hsl(var(--clr-white));
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.container .content .author p span:hover {
+  color: hsl(var(--clr-cyan));
 }/*# sourceMappingURL=style.css.map */
