@@ -91,7 +91,7 @@ picture {
 .container .content .title {
   width: 302px;
   color: hsl(var(--clr-white));
-  font-family: Outfit;
+  font-family: var(--font-family-outfit);
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -104,7 +104,7 @@ picture {
   width: 302px;
   color: hsl(var(--clr-soft-blue));
   /* Body */
-  font-family: Outfit;
+  font-family: var(--font-family-outfit);
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -117,7 +117,7 @@ picture {
 }
 .container .content .info .value {
   color: hsl(var(--clr-cyan));
-  font-family: Outfit;
+  font-family: var(--font-family-outfit);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -131,7 +131,7 @@ picture {
 }
 .container .content .info .timeleft {
   color: hsl(var(--clr-soft-blue));
-  font-family: Outfit;
+  font-family: var(--font-family-outfit);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -162,7 +162,7 @@ picture {
 .container .content .author p {
   color: hsl(var(--clr-soft-blue));
   /* Caption */
-  font-family: Outfit;
+  font-family: var(--font-family-outfit);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -170,7 +170,7 @@ picture {
 }
 .container .content .author p span {
   color: hsl(var(--clr-white));
-  font-family: Outfit;
+  font-family: var(--font-family-outfit);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

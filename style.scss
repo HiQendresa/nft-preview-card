@@ -102,7 +102,7 @@ picture {
 
         color: hsl(var(--clr-white));
 
-        font-family: Outfit;
+        font-family: var(--font-family-outfit);
         font-size: 22px;
         font-style: normal;
         font-weight: 600;
@@ -119,7 +119,7 @@ picture {
         color: hsl(var(--clr-soft-blue));
 
         /* Body */
-        font-family: Outfit;
+        font-family: var(--font-family-outfit);
         font-size: 18px;
         font-style: normal;
         font-weight: 300;
@@ -134,7 +134,7 @@ picture {
         .value {
             color: hsl(var(--clr-cyan));
 
-            font-family: Outfit;
+            font-family: var(--font-family-outfit);
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
@@ -152,7 +152,7 @@ picture {
         .timeleft {
             color: hsl(var(--clr-soft-blue));
 
-            font-family: Outfit;
+            font-family: var(--font-family-outfit);
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -193,7 +193,7 @@ picture {
         p {
             color: hsl(var(--clr-soft-blue));            
             /* Caption */
-            font-family: Outfit;
+            font-family: var(--font-family-outfit);
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -201,7 +201,7 @@ picture {
             
             span {
                 color: hsl(var(--clr-white));
-                font-family: Outfit;
+                font-family: var(--font-family-outfit);
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
